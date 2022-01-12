@@ -8,4 +8,4 @@ This is the git repo that holds all the content for the DragonFruit wiki, hosted
 Coming soon...
 
 ## License
-The content ontent of this repo is licensed under [CC-BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+The content of this repo is licensed under [CC BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/). You can also refer to the [LICENSE](/LICENSE.md) file as well.
