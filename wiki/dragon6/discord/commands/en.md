@@ -13,7 +13,7 @@ The Dragon6 bot supports a large array of commands which can be used to lookup u
 
 - `help` - display the welcome message with commands list
 - `support` - get a link to the DragonFruit Discord
-- `players`- get the current number of players on Rainbow Six (for Steam platform only)
+- `players` - get the current number of players on Rainbow Six (for Steam platform only)
 - `about [username] (platform)` - gets info (last login date and session count) about the requested user
 - `stats [username] (platform)` - gets general stats (overall stats) for the requested user
 - `casual [username] (platform)` - gets casual stats (kd, wl, MMR) for the requested user for the current season (casual)
