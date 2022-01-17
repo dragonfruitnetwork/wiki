@@ -11,7 +11,7 @@ Dragon6 API is a client wrapper for the Ubisoft services, aiming to create a fri
 
 ## Contents
 
-|                      |                                                                          |
+| Page                 | Description                                                              |
 |----------------------|--------------------------------------------------------------------------|
 | Getting Started      | A quick guide for getting started quickly                                |
 | Clients              | How to create a client that can communicate with the Ubisoft servers     |
