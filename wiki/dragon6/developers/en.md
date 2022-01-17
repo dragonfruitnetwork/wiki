@@ -9,7 +9,7 @@ stub: true
 
 Dragon6 API is a client wrapper for the Ubisoft services, aiming to create a frictionless and quick development experience.
 
-## Contents
+### Contents
 
 | Page                 | Description                                                              |
 |----------------------|--------------------------------------------------------------------------|
