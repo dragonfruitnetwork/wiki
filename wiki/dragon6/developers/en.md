@@ -9,13 +9,13 @@ stub: true
 
 Dragon6 API is a client wrapper for the Ubisoft services, aiming to create a frictionless and quick development experience.
 
-| Page                 | Description                                                              |
-|----------------------|--------------------------------------------------------------------------|
-| Getting Started      | A quick guide for getting started in a few minutes                       |
-| Clients              | How to create a client that can communicate with the Ubisoft servers     |
-| Accounts             | Information on how account searching works                               |
-| Legacy Stats         | Notes on the legacy stats system (the one that Ubisoft replaced in 2020) |
-| Modern Stats         | How to interact with the new (2020) stats service                        |
-| Seasonal Stats       | How to view ranked and casual stats for a specific season                |
-| Levels and Lootboxes | Retrieving the current level and chances to roll an alpha pack           |
-| Assets               | How to use our asset repository to consume seasonal information          |
+| Page                                                    | Description                                                              |
+|---------------------------------------------------------|--------------------------------------------------------------------------|
+| Getting Started                                         | A quick guide for getting started in a few minutes                       |
+| [Clients](/wiki/dragon6/develoeprs/clients)             | How to create a client that can communicate with the Ubisoft servers     |
+| [Accounts](/wiki/dragon6/developers/accounts)           | Information on how account searching works                               |
+| Legacy Stats                                            | Notes on the legacy stats system (the one that Ubisoft replaced in 2020) |
+| Modern Stats                                            | How to interact with the new (2020) stats service                        |
+| Seasonal Stats                                          | How to view ranked and casual stats for a specific season                |
+| Levels and Lootboxes                                    | Retrieving the current level and chances to roll an alpha pack           |
+| Assets                                                  | How to use our asset repository to consume seasonal information          |

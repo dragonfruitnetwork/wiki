@@ -5,7 +5,6 @@ tags:
 ---
 
 # Dragon6 Discord
-
 Dragon6 offers a Discord bot that can be used to access stats within the Discord chat interface.
 
 ## Inviting the bot
