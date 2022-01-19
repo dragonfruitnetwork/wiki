@@ -5,10 +5,7 @@ tags:
 ---
 
 # Dragon6 Discord
-Dragon6 offers a Discord bot that can be used to access stats within the Discord chat interface.
-
-## Inviting the bot
-The invite link can be found on the [Dragon6 website](https://dragon6.dragonfruit.network/discord)
+Dragon6 offers a Discord bot that can be used to access stats within the Discord chat interface. The bot can be invited using the link on the [Dragon6 website](https://dragon6.dragonfruit.network/discord)
 
 ## Using the bot
 It is recommended the bot is given a dedicated channel in your server to prevent over-cluttering. We _strongly_ recommend rate-limiting the channel in addition to prevent hard rate-limits being hit often. Most commands are ratelimited to 1 command every 5 seconds (per user across all servers). The bot does **not** accept DMs and will not respond to them.
