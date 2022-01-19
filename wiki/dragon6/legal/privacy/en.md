@@ -9,7 +9,7 @@ The use of this service is subject to the agreement of the terms outlined in thi
 
 ### **Terms of Use**
 
-You can find the Terms of Use [here](./terms)
+You can find the Terms of Use [here](/wiki/dragon6/legal/privacy/terms)
 
 ### **What data do you collect?**
 

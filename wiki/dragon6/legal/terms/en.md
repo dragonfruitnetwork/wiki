@@ -3,7 +3,7 @@
 
 ### **Overview**
 
-DragonFruit Network is offering you a service, which is conditioned on your acceptance, without any modification whatsoever to the following terms, conditions, and notices. By visiting and/or using the services offered by this site (https://dragon6.dragonfruit.network) or any affiliated services (henceforth referenced as "Dragon6"), you are acknowledging your full compliance to the terms and conditions listed here. As a condition of your use of this web site, you warrant that you will not use this web site, or any of the content obtained from this web site, for any purpose that is unlawful or prohibited by these terms. In addition to this policy, please also make sure to visit and understand our [Privacy Policy](./privacy). If you violate any of these Terms of Use, your permission to use the web site automatically terminates.
+DragonFruit Network is offering you a service, which is conditioned on your acceptance, without any modification whatsoever to the following terms, conditions, and notices. By visiting and/or using the services offered by this site (https://dragon6.dragonfruit.network) or any affiliated services (henceforth referenced as "Dragon6"), you are acknowledging your full compliance to the terms and conditions listed here. As a condition of your use of this web site, you warrant that you will not use this web site, or any of the content obtained from this web site, for any purpose that is unlawful or prohibited by these terms. In addition to this policy, please also make sure to visit and understand our [Privacy Policy](/wiki/dragon6/legal/privacy). If you violate any of these Terms of Use, your permission to use the web site automatically terminates.
 
 ### **Description Of Service**
 
