@@ -16,5 +16,5 @@ Dragon6 API is a client wrapper for the Ubisoft services, aiming to create a fri
 | [Accounts](./developers/accounts)                       | Information on how account searching works                               |
 | [Legacy Stats](./developers/legacy)                     | Notes on the legacy stats system (the one that Ubisoft replaced in 2020) |
 | [Seasonal Stats](./developers/seasonal)                 | How to view ranked and casual stats for a specific season                |
-| Levels and Lootboxes                                    | Retrieving the current level and chances to roll an alpha pack           |
+| [Levels and Lootboxes](./developers/levels)             | Retrieving the current level and chances to roll an alpha pack           |
 | Assets                                                  | How to use our asset repository to consume seasonal information          |
