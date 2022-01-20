@@ -12,9 +12,9 @@ Dragon6 API is a client wrapper for the Ubisoft services, aiming to create a fri
 | Page                                                    | Description                                                              |
 |---------------------------------------------------------|--------------------------------------------------------------------------|
 | Getting Started                                         | A quick guide for getting started in a few minutes                       |
-| [Clients](/wiki/dragon6/developers/clients)             | How to create a client that can communicate with the Ubisoft servers     |
-| [Accounts](/wiki/dragon6/developers/accounts)           | Information on how account searching works                               |
-| Legacy Stats                                            | Notes on the legacy stats system (the one that Ubisoft replaced in 2020) |
+| [Clients](/clients)                                     | How to create a client that can communicate with the Ubisoft servers     |
+| [Accounts](/accounts)                                   | Information on how account searching works                               |
+| [Legacy Stats](/legacy)                                 | Notes on the legacy stats system (the one that Ubisoft replaced in 2020) |
 | Modern Stats                                            | How to interact with the new (2020) stats service                        |
 | Seasonal Stats                                          | How to view ranked and casual stats for a specific season                |
 | Levels and Lootboxes                                    | Retrieving the current level and chances to roll an alpha pack           |
