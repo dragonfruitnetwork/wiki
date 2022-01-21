@@ -1,7 +1,7 @@
 # Wiki
 Welcome to the DragonFruit wiki, the open-source knowledgebase for DragonFruit products and services
 
-> We're in the process of documenting many of our products, so some may not exist yet.
+> We're in the process of documenting many of our products, so some may be incomplete or not exist yet.
 
 :::contents-table
 |                             |                                                                               |                                                                                                                                                                                                                                                                    |
