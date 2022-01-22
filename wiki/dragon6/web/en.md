@@ -1,7 +1,7 @@
 # Dragon6 Web
 The Dragon6 Website acts as the core component for Dragon6 clients and services, including API, token management, Discord bot and verification services.
 
-![](dragon6-web.png "Dragon6 Website frontpage")
+![](./web/dragon6-web.png "Dragon6 Website frontpage")
 
 <!-- TODO add mobile link -->
 
