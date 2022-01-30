@@ -6,7 +6,7 @@ Overview
 
 DragonFruit Identity Platform (accessible at [https://id.dragonfruit.network](https://id.dragonfruit.network)) is designed to allow DragonFruit-developed services to integrate single-sign-on (SSO) login. It also allows for users to choose from a large range of 3rd party services to authenticate against.
 
-DragonFruit Network can be contacted by emailing [inbox@dragonfruit.network](mailto:inbox@dragonfruit.network)
+> DragonFruit Network can be contacted by emailing [inbox@dragonfruit.network](mailto:inbox@dragonfruit.network)
 
 Data Collected
 --------------
