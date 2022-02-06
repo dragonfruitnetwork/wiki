@@ -40,7 +40,7 @@ Welcome to the DragonFruit wiki, the open-source knowledgebase for DragonFruit p
          </tr>
          <tr>
             <td>
-                <span class="material-icons-outlined" style="font-size: 36px">account_circle</span>
+                <span class="material-icons" style="font-size: 36px">account_circle</span>
             </td>
             <td>
                <h3>DragonFruit ID</h3>
