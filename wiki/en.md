@@ -18,7 +18,7 @@ Welcome to the DragonFruit wiki, the open-source knowledgebase for DragonFruit p
             <br> 
             <strong>Features</strong> » <a href="./wiki/onionfruit/components/bridges">Bridges</a> · <a href="./wiki/onionfruit/components/securdns">SecurDNS</a> · <a href="./wiki/onionfruit/components/updater">Updater</a> · <a href="./wiki/onionfruit/components/tor-control">Tor RPC Console</a>    
             <br>
-            <strong>Legal</strong> » <a href="./wiki/dragon6/legal/privacy">Disclaimer</a>
+            <strong>Legal</strong> » <a href="./wiki/onionfruit/legal/disclaimer">Disclaimer</a>
         </td>
         </tr>
         <tr>
