@@ -16,6 +16,6 @@ Users will have a DragonFruit id created on signing in with an account that has 
 ### Clients
 _also referred to as apps_
 
-Users can create clients to interact with services including the Dragon6 API and perform delegate actions (actions that operate on the owner's behalf as a user). Some clients are interactive and can retrieve user information. These are only created by DragonFruit for official means and are unavailable to other users.
+Users can create clients to interact with services including the Dragon6 API and perform delegate actions (actions that interact with a service on behalf of the client owner). Some clients are interactive and can be used to provide login functionality and retrieve user information. These can only be created by DragonFruit for official means and are unavailable to other users.
 
 Any service you login to does not know what provider you have used, and you will be given the chance to review the data each client has requested. 
