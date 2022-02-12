@@ -8,7 +8,7 @@ Yes, providing the app you want to use is capable of using SOCKS5 and is set to 
 ## Can I connect to .onion sites
 If you have version 2021.116 (which is on cutting edge), you can enable the SecurDNS feature which will allow any app to resolve `.onion` sites. This requires admin privileges and is currently an experimental feature. There are also issues when running on Windows 11.
 
-For more information, see the [DNS routing page](./components/securdns)
+For more information, see the [DNS routing page](../components/securdns)
 
 ## Do you have a portable copy?
 No, because the installer uses Squirrel, you don't need admin rights to install/use it. If you still need a portable copy then it's highly likely the target machine you're trying to use won't allow the program to change the appropriate settings.

@@ -5,12 +5,12 @@
 
 Dragon6 API is a client wrapper for the Ubisoft services, aiming to create a frictionless and quick development experience.
 
-| Page                                                    | Description                                                              |
-|---------------------------------------------------------|--------------------------------------------------------------------------|
-| [Getting Started](./developers/quickstart)              | A quick guide for getting started                                        |
-| [Clients](./developers/clients)                         | How to create a client that can communicate with the Ubisoft servers     |
-| [Accounts](./developers/accounts)                       | Information on how account searching works                               |
-| [Legacy Stats](./developers/legacy)                     | Notes on the legacy stats system (the one that Ubisoft replaced in 2020) |
-| [Seasonal Stats](./developers/seasonal)                 | How to view ranked and casual stats for a specific season                |
-| [Levels and Lootboxes](./developers/levels)             | Retrieving the current level and chances to roll an alpha pack           |
-| [Assets](./developers/assets)                           | How to use our asset repository to consume seasonal information          |
+| Page                                       | Description                                                              |
+|--------------------------------------------|--------------------------------------------------------------------------|
+| [Getting Started](quickstart)              | A quick guide for getting started                                        |
+| [Clients](clients)                         | How to create a client that can communicate with the Ubisoft servers     |
+| [Accounts](accounts)                       | Information on how account searching works                               |
+| [Legacy Stats](legacy)                     | Notes on the legacy stats system (the one that Ubisoft replaced in 2020) |
+| [Seasonal Stats](seasonal)                 | How to view ranked and casual stats for a specific season                |
+| [Levels and Lootboxes](levels)             | Retrieving the current level and chances to roll an alpha pack           |
+| [Assets](assets)                           | How to use our asset repository to consume seasonal information          |

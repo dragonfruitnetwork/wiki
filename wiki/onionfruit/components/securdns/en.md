@@ -23,4 +23,4 @@ While this now allows for dark-net sites to be viewed inside a normal browser, *
 - Upto 4 fallback servers will be selected. If none are provided, they will default to [CloudFlare's 1.1.1.1 DNS service](https://1.1.1.1/dns/)
 - **This is currently experimental**. Don't expect everything to be 100%. We encourage you to open an issue if something isn't working.
 - If no Tor-enabled sites are working, try **disabling IPv6** for the network interface used, as some ISPs seem to be unable to get it to work properly.
-- **Dark net responsibly**. As per our [disclaimer](../legal/disclaimer), we take no responsibility if you get caught.
+- **Dark net responsibly**. As per our [disclaimer](../../legal/disclaimer), we take no responsibility if you get caught.

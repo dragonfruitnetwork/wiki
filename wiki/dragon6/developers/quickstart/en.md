@@ -13,7 +13,7 @@ You now need to decide how you want to cache access tokens. This is important as
 
 To create a stats client, add a new class that inherits `Dragon6Client` and implement the function `GetToken`. A single instance should then be initialised for the duration of the session, either marking it as `static` or using a dependency container with a `Singleton` lifetime (or equivalent).
 
-See the "Usage" section in [Clients](./clients) to see an example of how to implement the client.
+See the "Usage" section in [Clients](../clients) to see an example of how to implement the client.
 
 ### Use the client
-When accessing the client, the library provides a set of extension methods to get developers started as soon as possible. Refer to the [Dragon6 Developer homepage](./) for specific aspects of the library and examples.
+When accessing the client, the library provides a set of extension methods to get developers started as soon as possible. Refer to the [Dragon6 Developer homepage](../) for specific aspects of the library and examples.
