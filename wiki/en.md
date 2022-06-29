@@ -10,11 +10,11 @@ Welcome to the DragonFruit wiki, the open-source knowledgebase for DragonFruit p
             A free and no-fuss Tor® access client
         </td>
         <td>
-            <strong>Articles</strong> » <a href="/wiki/onionfruit/getting-started">Getting Started</a> &middot; <a href="/wiki/onionfruit/faq">FAQ</a> &middot; <a href="/wiki/onionfruit/launch-args">Launch Arguments</a> &middot; <a href="/wiki/onionfruit/troubleshooting">Troubleshooting Guide</a> &middot; <a href="/wiki/onionfruit/reporting-issues">Reporting Issues</a>
+            <strong>Articles</strong> » [/wiki/onionfruit/getting-started](Getting Started) &middot; [/wiki/onionfruit/faq](FAQ) &middot; [/wiki/onionfruit/launch-args](Launch Arguments) &middot; [/wiki/onionfruit/troubleshooting](Troubleshooting Guide) &middot; [/wiki/onionfruit/reporting-issues](Reporting Issues)
             <br> 
-            <strong>Features</strong> » <a href="/wiki/onionfruit/components/bridges">Bridges</a> &middot; <a href="/wiki/onionfruit/components/securdns">SecurDNS</a> &middot; <a href="/wiki/onionfruit/components/updater">Updater</a> &middot; <a href="/wiki/onionfruit/components/tor-control">Tor RPC Console</a>    
+            <strong>Features</strong> » [/wiki/onionfruit/components/bridges](Bridges) &middot; [/wiki/onionfruit/components/securdns](SecurDNS) &middot; [/wiki/onionfruit/components/updater](Updater) &middot; [/wiki/onionfruit/components/tor-control](Tor RPC Console)    
             <br>
-            <strong>Legal</strong> » <a href="/wiki/onionfruit/legal/disclaimer">Disclaimer</a>
+            <strong>Legal</strong> » [/wiki/onionfruit/legal/disclaimer](Disclaimer)
         </td>
         </tr>
         
@@ -24,11 +24,11 @@ Welcome to the DragonFruit wiki, the open-source knowledgebase for DragonFruit p
             A free to use family of Rainbow Six | Siege stats trackers
         </td>
         <td>
-            <strong>Products</strong> » <a href="/wiki/dragon6/web">Web</a> &middot; <a href="/wiki/dragon6/desktop">Desktop</a> &middot; <a href="/wiki/dragon6/discord">Discord</a>
+            <strong>Products</strong> » [/wiki/dragon6/web](Web) &middot; [/wiki/dragon6/desktop](Desktop) &middot; [/wiki/dragon6/discord](Discord)
             <br> 
-            <strong>Services</strong> » <a href="/wiki/dragon6/developers">Developers</a> &middot; <a href="/wiki/dragon6/verification">Verification</a>
+            <strong>Services</strong> » [/wiki/dragon6/developers](Developers) &middot; [/wiki/dragon6/verification](Verification)
             <br>
-            <strong>Legal</strong> » <a href="/wiki/dragon6/legal/privacy">Privacy</a> &middot; <a href="/wiki/dragon6/legal/terms">Terms</a> &middot; <a href="/wiki/dragon6/legal/news-publishers">News Publishers</a>
+            <strong>Legal</strong> » [/wiki/dragon6/legal/privacy](Privacy) &middot; [/wiki/dragon6/legal/terms](Terms) &middot; [/wiki/dragon6/legal/news-publishers](News Publishers)
         </td>
         </tr>
 
@@ -37,7 +37,7 @@ Welcome to the DragonFruit wiki, the open-source knowledgebase for DragonFruit p
             <h3>DragonFruit ID</h3>
         </td>
         <td>
-        <a href="/wiki/hina">Overview</a> &middot; <a href="/wiki/hina/legal/privacy">Privacy</a>
+        [/wiki/hina](Overview) &middot; [/wiki/hina/legal/privacy](Privacy)
         </td>
         </tr>
     </tbody>
