@@ -11,7 +11,7 @@ Ubisoft provides a set of endpoints that can be used to lookup general account i
 | PlatformId | The id of the user on the original platform                                                                      |
 
 ### Usage
-> This assumes you have created a custom [Dragon6Client](../clients)
+> This assumes you have created a custom [Dragon6Client](/wiki/dragon6/developers/clients)
 
 ```cs
 private async Task GetAccountInfo(string identifier, Platform platform)
