@@ -1,10 +1,12 @@
 # Dragon6 Client
-Dragon6 is built on [DragonFruit.Data](https://github.com/dragonfruitnetwork/dragonfruit.common), a framework which is used across all DragonFruit APIs to enable consistency when working with multiple wrappers in the same project. Due to how Ubisoft authentication works, developers must inherit the base `Dragon6Client` class and provide a way for the client to obtain a token. It is recommended that some form of persistent storage is used to hold tokens due to strict ratelimits imposed on logins, and requesting too frequently can result in a tempoary IP ban.
+Dragon6 is built on [DragonFruit.Data](https://github.com/dragonfruitnetwork/dragonfruit-common), a framework which is used across all DragonFruit APIs to enable consistency when working with our libraries. Due to how Ubisoft authentication works, developers must inherit the base `Dragon6Client` class and provide a way for the client to obtain a token. It is recommended that some form of persistent storage is used to hold tokens due to strict ratelimits imposed on logins. **Requesting tokens too frequently can result in a tempoary IP ban. You should save the token recieved to some form of storage (redis, files, etc.)**
 
-These clients are designed to be either `static` or `Singleton` (if using a dependency container system), and all client management is automatic, with performance and memory optimisations out-the-box.
+These clients are designed to be either `static` or `Singleton` (if using a dependency container system), and all management is automatic, with performance and memory optimisations out-the-box.
+
+As of version [2022.702](https://github.com/dragonfruitnetwork/dragon6-api/releases/tag/2022.702), the `GetToken()` method is fully asynchronous, which improves performance due to networking/IO tasks that occur.
 
 ### Example
-> It is bad practise to store credentials in plain code. These should be stored in a credential manager or environment variables
+> It is bad practise to store credentials in plain code. Store them somewhere safe, like a configuration file or environment variables
 
 ```cs
 using System;
@@ -25,7 +27,10 @@ namespace DragonFruit.Six.Web.Services
         /// <summary>
         /// Tells the Dragon6 Client how to get a token in the case it's restarted or expired
         /// </summary>
-        protected override TokenBase GetToken()
+        /// <remarks>
+        /// This is a thread-safe method and will not be called more than once at a time, regardless of how many requests the client receives.
+        /// </remarks>
+        protected override ValueTask<IUbisoftToken> GetToken()
         {
             if (File.Exists(_tokenFile))
             {
@@ -39,12 +44,9 @@ namespace DragonFruit.Six.Web.Services
             // store logins somewhere that is NOT in the code
             var username = "username";
             var password = "password";
-            var newToken = this.GetUbiToken(username, password);
+            var newToken = await this.GetUbiTokenAsync(username, password).ConfigureAwait(false);
 
-            // write new token to disk async (non-blocking)
-            _ = Task.Run(() => FileServices.WriteFile(_tokenFile, newToken));
-            
-            // return to keep going
+            FileServices.WriteFile(_tokenFile, newToken);
             return newToken;
         }
     }
