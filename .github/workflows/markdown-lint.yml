@@ -12,9 +12,6 @@ jobs:
         with:
           fetch-depth: 0
         
-      - name: Install markdownlint
-        run: npm install -g markdownlint-cli
-        
       - name: Get changed files
         id: changed-files
         uses: tj-actions/changed-files@v23.1
@@ -28,4 +25,6 @@ jobs:
 
       - name: Run Linter
         if: steps.changed-files.outputs.any_changed == 'true'
-        run: markdownlint -c .github/linter/.markdown-lint.yml ${{ steps.changed-files.outputs.all_changed_files }}
+        run: |
+          npm install -g markdownlint-cli
+          markdownlint -c .github/linter/.markdown-lint.yml ${{ steps.changed-files.outputs.all_changed_files }}
