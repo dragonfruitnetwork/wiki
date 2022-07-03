@@ -1,0 +1,24 @@
+name: Markdown Lint
+
+on:
+  pull_request: { }
+    
+jobs:
+  lint:
+    name: Linter
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Lint
+        uses: github/super-linter/slim@v4
+        env:
+          LOG_LEVEL: notice
+          MULTI_STATUS: false
+          VALIDATE_MARKDOWN: true
+          VALIDATE_ALL_CODEBASE: false
+          FILTER_REGEX_EXCLUDE: "\\.github/.*"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
