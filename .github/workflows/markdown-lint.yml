@@ -1,7 +1,8 @@
 name: Markdown Lint
 
 on:
-  pull_request: { }
+  pull_request:
+    types: ['synchronize']
     
 jobs:
   lint:
@@ -21,5 +22,5 @@ jobs:
           VALIDATE_MARKDOWN: true
           VALIDATE_ALL_CODEBASE: false
           FILTER_REGEX_INCLUDE: "/wiki/.*"
+          DEFAULT_BRANCH: ${{ github.base_ref }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DEFAULT_BRANCH: ${{ github.event.pull_request.base.ref }}
