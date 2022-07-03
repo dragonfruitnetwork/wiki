@@ -17,7 +17,7 @@ jobs:
         uses: tj-actions/changed-files@v23.1
         with:
           files: |
-            *.md
+            **/*.md
           files-ignore: |
             README.md
             .github/*
