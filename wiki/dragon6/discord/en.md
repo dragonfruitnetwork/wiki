@@ -5,9 +5,11 @@ tags:
 ---
 
 # Dragon6 Discord
+
 Dragon6 offers a Discord bot that can be used to access stats within the Discord chat interface. The bot can be invited using the link on the [Dragon6 website](https://dragon6.dragonfruit.network/discord)
 
 ## Using the bot
+
 It is recommended the bot is given a dedicated channel in your server to prevent over-cluttering. We _strongly_ recommend rate-limiting the channel in addition to prevent hard rate-limits being hit often. Most commands are ratelimited to 1 command every 5 seconds (per user across all servers). The bot does **not** accept DMs and will not respond to them.
 
 The bot is addressed by mentioning the bot `@Dragon6` (when typing), or `<@679701260177244163>` (copy-paste) followed by the command (see table below)
@@ -23,5 +25,6 @@ The bot is addressed by mentioning the bot `@Dragon6` (when typing), or `<@67970
 - `ranked [username] (platform)` - gets casual stats (K/D, W/L, Rank) for the requested user for the current season (ranked)
 
 ### Notes
+
 - When a username contains whitespace, it must be surrounded by double quotes (e.g. `"a username with spaces inside"`)
 - The platform parameter is not needed unless the user is not on PC/UPlay
