@@ -20,5 +20,5 @@ jobs:
           MULTI_STATUS: false
           VALIDATE_MARKDOWN: true
           VALIDATE_ALL_CODEBASE: false
-          FILTER_REGEX_EXCLUDE: "\\.github/.*"
+          FILTER_REGEX_INCLUDE: "/wiki/.*"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
