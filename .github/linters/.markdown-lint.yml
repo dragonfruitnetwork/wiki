@@ -1,0 +1,6 @@
+default: true
+header-increment: false
+header-style:
+  style: atx
+ul-style:
+  style: dash
