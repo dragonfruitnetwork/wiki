@@ -27,4 +27,4 @@ jobs:
         if: steps.changed-files.outputs.any_changed == 'true'
         run: |
           npm install -g markdownlint-cli
-          markdownlint -c ${{ github.workspace }}/.github/linter/.markdown-lint.yml ${{ steps.changed-files.outputs.all_changed_files }}
+          markdownlint -c .github/linters/.markdown-lint.yml ${{ steps.changed-files.outputs.all_changed_files }}
