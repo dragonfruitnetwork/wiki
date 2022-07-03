@@ -19,6 +19,6 @@ jobs:
           MULTI_STATUS: false
           VALIDATE_MARKDOWN: true
           VALIDATE_ALL_CODEBASE: false
-          FILTER_REGEX_INCLUDE: "/wiki/.*"
+          FILTER_REGEX_INCLUDE: ".*/wiki/.*"
           DEFAULT_BRANCH: ${{ github.base_ref }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
