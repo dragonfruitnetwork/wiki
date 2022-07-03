@@ -9,16 +9,15 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+        
+      - name: Install markdownlint
+        run: npm install -g markdownlint-cli
+        
+      - name: Get Changed Files
+        id: linter-files
+        run: |
+          CHANGED_FILES=$(git --no-pager diff --name-only FETCH_HEAD $(git merge-base FETCH_HEAD ${{ github.head_ref }}))
+          echo "::set-output name=files::$(echo -e $CHANGED_FILES | grep -Po "^(.*(?<=md))$" | tr '\n' ' ')"
 
-      - name: Lint
-        uses: docker://ghcr.io/github/super-linter:slim-v4
-        env:
-          LOG_LEVEL: notice
-          MULTI_STATUS: false
-          VALIDATE_MARKDOWN: true
-          VALIDATE_ALL_CODEBASE: false
-          FILTER_REGEX_INCLUDE: ".*/wiki/.*"
-          DEFAULT_BRANCH: ${{ github.base_ref }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run Linter
+        run: markdownlint -c .github/linter/.markdown-lint.yml ${{ steps.run_tests.outputs.files }}
