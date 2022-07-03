@@ -10,21 +10,50 @@ Dragon6 offers a Discord bot that can be used to access stats within the Discord
 
 ## Using the bot
 
-It is recommended the bot is given a dedicated channel in your server to prevent over-cluttering. We _strongly_ recommend rate-limiting the channel in addition to prevent hard rate-limits being hit often. Most commands are ratelimited to 1 command every 5 seconds (per user across all servers). The bot does **not** accept DMs and will not respond to them.
+After inviting the bot using the link above, it's ready to use. We recommend setting a couple of dedicated channels for commands to be sent from to prevent over-cluttering, which can be done by visiting your [server's integrations page](https://support.discord.com/hc/en-us/articles/360045093012-Server-Integrations-Page).
 
-The bot is addressed by mentioning the bot `@Dragon6` (when typing), or `<@679701260177244163>` (copy-paste) followed by the command (see table below)
+> Admins of a server can use all slash commands in any text channel, regardless of restrictions applied in the integrations page
 
-### Commands
+Commands are invoked by typing a forward slash (`/`), followed by the command name and any options required. Some commands may require more information than others - the table below outlines each command, its options and expected response.
 
-- `help` - display the welcome message with commands list
-- `support` - get a link to the DragonFruit Discord
-- `players` - get the current number of players on Rainbow Six (for Steam platform only)
-- `about [username] (platform)` - gets info (last login date and session count) about the requested user
-- `stats [username] (platform)` - gets general stats (overall stats) for the requested user
-- `casual [username] (platform)` - gets casual stats (K/D, W/L, MMR) for the requested user for the current season (casual)
-- `ranked [username] (platform)` - gets casual stats (K/D, W/L, Rank) for the requested user for the current season (ranked)
+## Commands
 
-### Notes
+Command options in [square brackets] denote the option is required, while options surrounded by (curved brackets) are optional
 
-- When a username contains whitespace, it must be surrounded by double quotes (e.g. `"a username with spaces inside"`)
+### `/about [username] (platform)`
+
+Gets basic information about an account including:
+
+- Time since last gameplay session
+- Number of gameplay sessions
+- Date the game was first played
+
+### `/level [username] (platform)`
+
+Gets the level and alpha pack chances of the provided user.
+
+### `/overview [username] (platform)`
+
+Fetches and displays a general overview of the user's gameplay over the past ~60 days. Stats are aggregated from Casual, Ranked and Unranked gameplay.
+
+### `/seasonal [board] [username] (platform)`
+
+Fetches the user's seasonal stats for the provided leaderboard (ranked, casual or deathmatch). The user must have played (or abandoned) at least one match for the command to return any meaningful response.
+
+### `/operators [username] (platform)`
+
+Displays the players most picked operators from the past ~60 days across casual, unranked and ranked
+
+### `/players`
+
+Displays the number of players currently online who own the game through Steam
+
+### `/dragon6-apps`
+
+Returns a set of links to other Dragon6 apps (only the caller can view the response)
+
+## Trivia
+
 - The platform parameter is not needed unless the user is not on PC/UPlay
+- Linking a Discord account from the Dragon6 website allows callers to substitute the `username` option to `me`
+- Most errors are returned as [ephemeral messages](https://support.discord.com/hc/en-us/articles/1500000580222-Ephemeral-Messages-FAQ), meaning they will expire and others cannot view them
