@@ -2,7 +2,7 @@ name: Markdown Lint
 
 on:
   pull_request:
-    types: ['synchronize']
+    types: ['synchronize', 'assigned', 'opened', 'reopened']
     
 jobs:
   lint:
