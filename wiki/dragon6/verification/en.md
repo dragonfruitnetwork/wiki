@@ -1,7 +1,7 @@
 ---
 tags:
-    - verification
-    - users
+  - verification
+  - users
 ---
 
 # Dragon6 User Verification

@@ -1,7 +1,7 @@
 ---
 tags:
-    - discord
-    - bot
+  - discord
+  - bot
 ---
 
 # Dragon6 Discord

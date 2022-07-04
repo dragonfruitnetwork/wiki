@@ -1,7 +1,7 @@
 ---
 tags: 
-    - news
-    - publishers
+  - news
+  - publishers
 ---
 
 # Dragon6 News Sources
