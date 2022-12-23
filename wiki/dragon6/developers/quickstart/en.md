@@ -6,7 +6,7 @@
 1. If you haven't already, create a c# project in Visual Studio, Rider or whatever IDE you're using that targets .NET 6.0 or higher.
 2. Once you've created it, right click the project in the Solution explorer and click `Manage Nuget Packages`
 3. (On Visual Studio, click Browse first) then type into the search box `DragonFruit.Six.Api`
-4. Select the one by DragonFruit Network and click the plus button/install button that shows. **Make sure the version you're installing is equal to or higher than the version stated above** - if it isn't check the `enable prerelease versions` box to view all entries
+4. Select the package and press install (on Rider it is a plus icon)
 
 ### Create the stats client
 You now need to decide how you want to cache access tokens. This is important as when debugging, you'll likely restart the app multiple times which will run your login quota dry quickly.
