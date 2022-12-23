@@ -6,7 +6,8 @@ This is a migration guide listing the biggest breaking changes to the library th
 Ubisoft has stopped updating the times users has last logged into the game, and as it doesn't look like it's getting unblocked soon we've removed the ability to access the data.
 
 ### ⚠️ Changes to Authentication
-Because of the way authentication is managed on some of the APIs used internally to fetch data, tokens from multiple sources may need to be used - for example, the Ranked2 endpoints need to be authenticated as the game itself, but the token used to load those stats cannot be used to get some stats on other platforms.
+Because of the way authentication is managed on some of the APIs used internally to fetch data, tokens from multiple sources may need to be used.
+For example, the Ranked2 endpoints need to be authenticated as the game itself, but the token used to load those stats cannot be used to get some stats on other platforms.
 
 In response to adding the new endpoints, the way tokens are fetched has been changed to accompodate some endpoints requring specific service tokens:
 
