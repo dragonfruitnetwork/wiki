@@ -12,4 +12,5 @@ Each change is marked with an icon to denote it's meaning/effort required to res
 |  🌱   | Replacement/Addition               |
 
 ## Guides
+
 - [2022.1223](/wiki/dragon6/developers/migration-guides/2022.1223)
