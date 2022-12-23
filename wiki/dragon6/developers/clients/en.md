@@ -1,5 +1,8 @@
 # Dragon6 Client
-Dragon6 is built on [DragonFruit.Data](https://github.com/dragonfruitnetwork/dragonfruit-common), a framework which is used across all DragonFruit APIs to enable consistency when working with our libraries. Due to how Ubisoft authentication works, developers must inherit the base `Dragon6Client` class and provide a way for the client to obtain a token for the provided `UbisoftService`. It is recommended that some form of persistent storage is used to hold tokens due to strict ratelimits imposed on logins. **Requesting tokens too frequently can result in a tempoary IP ban. You should save the token recieved to some form of storage (redis, files, etc.)**
+Dragon6 is built on [DragonFruit.Data](https://github.com/dragonfruitnetwork/dragonfruit-common), a framework which is used across all DragonFruit APIs to enable consistency when working with our libraries.
+Due to how Ubisoft authentication works, developers must inherit the base `Dragon6Client` class and provide a way for the client to obtain a token for the provided `UbisoftService`.
+It is recommended that some form of persistent storage is used to hold tokens due to strict ratelimits imposed on logins.
+**Requesting tokens too frequently can result in a tempoary IP ban. You should save the token recieved to some form of storage (redis, files, etc.)**
 
 These clients are designed to be either `static` or `Singleton` (if using a dependency container system), and all management is automatic, with performance and memory optimisations out-the-box.
 
