@@ -1,5 +1,8 @@
 # Dragon6 Client
-Dragon6 is built on [DragonFruit.Data](https://github.com/dragonfruitnetwork/dragonfruit-common), a framework which is used across all DragonFruit APIs to enable consistency when working with our libraries. Due to how Ubisoft authentication works, developers must inherit the base `Dragon6Client` class and provide a way for the client to obtain a token. It is recommended that some form of persistent storage is used to hold tokens due to strict ratelimits imposed on logins. **Requesting tokens too frequently can result in a tempoary IP ban. You should save the token recieved to some form of storage (redis, files, etc.)**
+Dragon6 is built on [DragonFruit.Data](https://github.com/dragonfruitnetwork/dragonfruit-common), a framework which is used across all DragonFruit APIs to enable consistency when working with our libraries.
+Due to how Ubisoft authentication works, developers must inherit the base `Dragon6Client` class and provide a way for the client to obtain a token for the provided `UbisoftService`.
+It is recommended that some form of persistent storage is used to hold tokens due to strict ratelimits imposed on logins.
+**Requesting tokens too frequently can result in a tempoary IP ban. You should save the token recieved to some form of storage (redis, files, etc.)**
 
 These clients are designed to be either `static` or `Singleton` (if using a dependency container system), and all management is automatic, with performance and memory optimisations out-the-box.
 
@@ -21,8 +24,7 @@ namespace DragonFruit.Six.Web.Services
 {
     public class StatsClient : Dragon6Client
     {
-        // change this to whatever you want
-        private readonly string _tokenFile = Path.Combine(Path.GetTempPath(), "ubi.token");
+        private string GetTokenPath(UbisoftService service) => Path.Combine(Path.GetTempPath(), $"ubi-{service.ToString().ToLowerInvariant()}.token")
 
         /// <summary>
         /// Tells the Dragon6 Client how to get a token in the case it's restarted or expired
@@ -30,12 +32,14 @@ namespace DragonFruit.Six.Web.Services
         /// <remarks>
         /// This is a thread-safe method and will not be called more than once at a time, regardless of how many requests the client receives.
         /// </remarks>
-        protected override ValueTask<IUbisoftToken> GetToken()
+        protected override ValueTask<IUbisoftToken> GetToken(UbisoftService service, string sessionId)
         {
-            if (File.Exists(_tokenFile))
+            var path = GetTokenPath(service);
+
+            if (File.Exists(path))
             {
                 // if we have a file with some potentially valid keys, try that first
-                var token = FileServices.ReadFile<UbisoftToken>(_tokenFile);
+                var token = FileServices.ReadFile<UbisoftToken>(path);
 
                 if (!token.Expired)
                     return token;
@@ -44,9 +48,9 @@ namespace DragonFruit.Six.Web.Services
             // store logins somewhere that is NOT in the code
             var username = "username";
             var password = "password";
-            var newToken = await this.GetUbiTokenAsync(username, password).ConfigureAwait(false);
+            var newToken = await this.GetUbiTokenAsync(service, username, password).ConfigureAwait(false);
 
-            FileServices.WriteFile(_tokenFile, newToken);
+            FileServices.WriteFile(path, newToken);
             return newToken;
         }
     }
