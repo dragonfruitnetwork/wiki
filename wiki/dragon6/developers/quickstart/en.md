@@ -9,9 +9,11 @@
 4. Select the one by DragonFruit Network and click the plus button/install button that shows. **Make sure the version you're installing is equal to or higher than the version stated above** - if it isn't check the `enable prerelease versions` box to view all entries
 
 ### Create the stats client
-You now need to decide how you want to cache access tokens. This is important as when debugging, you'll likely restart the app multiple times which will run your login quota dry quickly. We recommend storing the token in a text file and try to retrieve it from there before resorting to online measures. In production, you could consider using other providers such as Redis, or a NoSQL database to store the token instead.
+You now need to decide how you want to cache access tokens. This is important as when debugging, you'll likely restart the app multiple times which will run your login quota dry quickly.
+We recommend storing the token in a text file and try to retrieve it from there before resorting to online measures. In production, you could consider using other providers such as Redis, or a NoSQL database to store the token instead.
 
-To create a stats client, add a new class that inherits `Dragon6Client` and implement the function `GetToken`. A single instance should then be initialised for the duration of the session, either marking it as `static` or using a dependency container with a `Singleton` lifetime (or equivalent).
+To create a stats client, add a new class that inherits `Dragon6Client` and implement the function `GetToken`.
+A single instance should then be initialised for the duration of the session, either marking it as `static` or using a dependency container with a `Singleton` lifetime (or equivalent).
 
 See the "Usage" section in [Clients](/wiki/dragon6/developers/clients) to see an example of how to implement the client.
 

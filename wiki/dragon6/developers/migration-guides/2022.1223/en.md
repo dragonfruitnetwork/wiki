@@ -12,6 +12,7 @@ In response to adding the new endpoints, the way tokens are fetched has been cha
 
 - The `SetUbiAppId()` method has been removed, and has been replaced with the `DefaultService` property
 - The `GetToken()` method now accepts both a `UbisoftService` and `string` parameters
+
   ```cs
   // old
   protected override Task<IUbisoftToken> GetToken(string sessionId) { }
