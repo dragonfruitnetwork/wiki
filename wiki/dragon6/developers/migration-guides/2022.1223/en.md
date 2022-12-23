@@ -9,6 +9,7 @@ Ubisoft has stopped updating the times users has last logged into the game, and 
 Because of the way authentication is managed on some of the APIs used internally to fetch data, tokens from multiple sources may need to be used - for example, the Ranked2 endpoints need to be authenticated as the game itself, but the token used to load those stats cannot be used to get some stats on other platforms.
 
 In response to adding the new endpoints, the way tokens are fetched has been changed to accompodate some endpoints requring specific service tokens:
+
 - The `SetUbiAppId()` method has been removed, and has been replaced with the `DefaultService` property
 - The `GetToken()` method now accepts both a `UbisoftService` and `string` parameters
   ```cs
@@ -23,6 +24,7 @@ In response to adding the new endpoints, the way tokens are fetched has been cha
 The old levels API has been removed due to levels not reflecting potential cross-platform changes, and has been replaced with a cross-platform compatible alternative.
 
 There are a couple of differences with this endpoint:
+
 - It's not batch-lookup compatible
 - It doesn't return alpha-pack chances unlike the previous endpoint
 
