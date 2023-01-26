@@ -6,7 +6,7 @@ Dragon6 is owned and operated by DragonFruit Network (also refered to as "We").
 The use of this service is subject to the agreement of the terms outlined in this page. Please also note that we may change these at any time, without notice.
 
 ### **Terms of Use**
-You can find the Terms of Use [here](/wiki/dragon6/legal/privacy/terms)
+You can find the Terms of Use [here](/wiki/dragon6/legal/terms)
 
 ### **What data do you collect?**
 To operate Dragon6, we need to collect the player’s username and platform to be able to find their stats. This may mean that users lookup other players/accounts that aren’t theirs. These usernames are aliases and are publicly visible across different games/platforms.
