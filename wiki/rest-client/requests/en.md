@@ -23,6 +23,7 @@ Types not covered in this list (structs, classes) will use the `.ToString()` imp
 
 ## Important Notes
 - `ApiRequest` classes should be marked as `partial` if the source generator will be used. Failure to do so will result in compilation errors
+- `ApiRequest`s must **not** be nested within another class, otherwise source generation will fail
 - Properties should not be `private` or `internal` as these can break the source generators and prevents extending requests if they're compiled into a library
 - Type constraints for bodies should be restricted to `class` to allow serialization to work properly
 
