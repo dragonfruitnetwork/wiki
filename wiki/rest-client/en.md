@@ -1,10 +1,8 @@
 # DragonFruit REST Client
-
 [![Latest Nuget](https://img.shields.io/nuget/v/DragonFruit.Data?label=DragonFruit.Data&logo=nuget)](https://nuget.org/packages/DragonFruit.Data)
-[![Latest Nuget](https://img.shields.io/nuget/v/DragonFruit.Data.Roslyn?label=DragonFruit.Data&logo=nuget)](https://nuget.org/packages/DragonFruit.Data.Roslyn)
+[![Latest Nuget (Roslyn)](https://img.shields.io/nuget/v/DragonFruit.Data.Roslyn?label=DragonFruit.Data.Roslyn&logo=nuget)](https://nuget.org/packages/DragonFruit.Data.Roslyn)
 
 ### Overview
-
 DragonFruit.Data is a HTTP REST client for .NET that is designed to be easy to use and acts as the main web communication system for many DragonFruit products, including internal tools.
 
 The design of the system is focused on three main components:
@@ -19,4 +17,5 @@ Additionally, the optional source generator can be used to improve runtime perfo
 
 | Page                                                                | Description                                                              |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [Getting Started](/wiki/rest-client/getting-started  )              | A quick guide for getting started                                        |
+| [Getting Started](/wiki/rest-client/getting-started)                | A quick guide for getting started.                                       |
+| [Requests](/wiki/rest-client/requests)                              | Different `ApiRequest` examples demonstrating potential use-cases.       |

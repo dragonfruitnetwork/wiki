@@ -71,7 +71,7 @@ public partial class SteamNewsRequest : ApiRequest
 
 In this example, a `SteamNewsRequest` requires an `AppId`, but `Count` and `MaxLength` are optional. If they are not set (`null`) they will not be included in the request.
 
-The class is marked as `partial` to allow the source generator to pre-compute the procedure needed to take the request and build it for the client to send.
+The class is marked as `partial` to allow the source generator to pre-compute the procedure needed to take the request and build it for the client to send. See [Requests](/wiki/rest-client/requests) for more examples.
 
 ### Perform the request and get the output
 After the client has been created and a request has been defined, we can make the request. Updating the `Main` method from `Program.cs`, we can now get some data back:
