@@ -1,4 +1,4 @@
-Welcome to the DragonFruit wiki, the open-source knowledgebase for DragonFruit products and services
+Welcome to the DragonFruit Wiki, the knowledgebase for DragonFruit products and services.
 
 > We're currently in the process of documenting products, so some may be incomplete or not exist yet.
 
@@ -18,22 +18,18 @@ Welcome to the DragonFruit wiki, the open-source knowledgebase for DragonFruit p
     </tr>
     <tr>
       <td>
-        <h3>Dragon6</h3> A free to use family of Rainbow Six | Siege stats trackers
+        <h3>DragonFruit ID</h3> The platform that powers identity management for DragonFruit Services
       </td>
       <td>
-        <strong>Products</strong> » <a href="/wiki/dragon6/web">Web</a> &middot; <a href="/wiki/dragon6/desktop">Desktop</a> &middot; <a href="/wiki/dragon6/discord">Discord</a>
-        <br>
-        <strong>Services</strong> » <a href="/wiki/dragon6/developers">Developers</a> &middot; <a href="/wiki/dragon6/verification">Verification</a>
-        <br>
-        <strong>Legal</strong> » <a href="/wiki/dragon6/legal/privacy">Privacy</a> &middot; <a href="/wiki/dragon6/legal/terms">Terms</a> &middot; <a href="/wiki/dragon6/legal/news-publishers">News Publishers</a>
+        <strong>Articles</strong> » <a href="/wiki/hina">Overview</a> &middot; <a href="/wiki/hina/legal/privacy">Privacy</a>
       </td>
     </tr>
     <tr>
       <td>
-        <h3>DragonFruit ID</h3>
+        <h3>DragonFruit.Data</h3> A lightweight, extensible HTTP/REST framework for .NET
       </td>
       <td>
-        <a href="/wiki/hina">Overview</a> &middot; <a href="/wiki/hina/legal/privacy">Privacy</a>
+        <strong>Articles</strong> » <a href="/wiki/rest-client">Overview</a> &middot; <a href="/wiki/rest-client/getting-started">Getting Started</a>
       </td>
     </tr>
   </tbody>
