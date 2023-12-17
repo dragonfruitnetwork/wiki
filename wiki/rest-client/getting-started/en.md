@@ -1,5 +1,4 @@
 # Getting Started
-
 In this guide, we will be creating a basic command-line program that can make a simple GET request to a remote server, and deserialize the response.
 
 This assumes an empty command-line project targeting .NET 6 or newer.
@@ -8,7 +7,6 @@ This assumes an empty command-line project targeting .NET 6 or newer.
 The two packages [`DragonFruit.Data`](https://nuget.org/packages/DragonFruit.Data) and (optionally) [`DragonFruit.Data.Roslyn`](https://nuget.org/packages/DragonFruit.Data.Roslyn) can be installed from NuGet via `<PackageReference>` tags in a `csproj` file or through your preferred GUI.
 
 ### Create a Client
-
 An `ApiClient<T>` needs to be created somewhere visible to everything that will access it, for example as a static property (or Singleton instance if using a dependency-injection framework)
 
 The <T> represents the default serializer used for classes that don't have a specific serializer chosen for them. There are two default serializers that are provided by default: `ApiJsonSerializer`
@@ -38,7 +36,6 @@ public class Program
 ```
 
 ### Create a request
-
 Next we need model a request to send.
 
 In this example, we want to contact the Steam API for news about a specific game. We can create a class inheriting from `ApiRequest` with the parameters (the game id, number of items, etc.) defined as properties:
@@ -77,7 +74,6 @@ In this example, a `SteamNewsRequest` requires an `AppId`, but `Count` and `MaxL
 The class is marked as `partial` to allow the source generator to pre-compute the procedure needed to take the request and build it for the client to send.
 
 ### Perform the request and get the output
-
 After the client has been created and a request has been defined, we can make the request. Updating the `Main` method from `Program.cs`, we can now get some data back:
 
 ```cs
@@ -92,7 +88,6 @@ public static async Task Main(string[] args)
 ```
 
 ### Conclusion
-
 This is only a very basic demonstration of what the library can do. Refer to the additional documents to see more features of the library including:
 
 - Sending other types of requests with complex data

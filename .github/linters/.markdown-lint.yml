@@ -1,18 +1,30 @@
 default: true
-header-increment: false
-blanks-around-headers: 0
+
+MD001: false # heading-increment
+MD013: false # line-length
+MD022: false # blanks-around-headings
+MD033: false # no-inline-html
+MD041: false # first-line-heading
+
+
 header-style:
   style: atx
+
 ul-style:
   style: dash
+
 code-block-style:
   style: fenced
+
 code-fence-style:
   style: backtick
+
 emphasis-style:
   style: underscore
+
 strong-style:
   style: asterisk
+
 line-length:
   line_length: 250
   code_blocks: false
