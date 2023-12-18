@@ -19,3 +19,4 @@ Additionally, the optional source generator can be used to improve runtime perfo
 |---------------------------------------------------------------------|--------------------------------------------------------------------------|
 | [Getting Started](/wiki/rest-client/getting-started)                | A quick guide for getting started.                                       |
 | [Requests](/wiki/rest-client/requests)                              | Different `ApiRequest` examples demonstrating potential use-cases.       |
+| [Serializers](/wiki/rest-client/serializers)                        | Creating custom `ApiSerialziers` for alternative data types.             |
