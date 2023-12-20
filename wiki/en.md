@@ -31,7 +31,7 @@ Welcome to the DragonFruit Wiki, the knowledgebase for DragonFruit products and 
       <td>
         <strong>Articles</strong> » <a href="/wiki/rest-client">Overview</a> &middot; <a href="/wiki/rest-client/getting-started">Getting Started</a>
         <br>
-        <strong>Features</strong> » <a href="/wiki/rest-client/clients">Clients</a> <a href="/wiki/rest-client/requests">Requests</a> &middot; <a href="/wiki/rest-client/serializers">Serializers</a>
+        <strong>Features</strong> » <a href="/wiki/rest-client/clients">Clients</a> &middot; <a href="/wiki/rest-client/requests">Requests</a> &middot; <a href="/wiki/rest-client/serializers">Serializers</a>
       </td>
     </tr>
   </tbody>
